@@ -30,7 +30,6 @@ public class Categoria {
 	private String nome;
 	
 	@NotNull(message = "Atributo ativo precisa ser inserido.")
-	@AssertTrue(message = "O valor precisa ser verdadeiro.")
 	private boolean ativo;
 	
 	@OneToMany(mappedBy = "categoria", cascade = CascadeType.REMOVE)
